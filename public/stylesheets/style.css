@@ -1,0 +1,28 @@
+body {
+  padding: 5%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: antiquewhite;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  padding: 30px;
+  border-top: solid brown 5px;
+  border-bottom: solid brown 5px;
+  background: white;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+section {
+  padding: 30px;
+  border-bottom: solid brown 5px;
+  background: white;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: justify;
+}
