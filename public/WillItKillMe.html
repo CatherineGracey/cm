@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+  body {
+    background: darkslategray;
+    padding: 15%;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  h1{
+    font-size: 6rem;
+    color: cornsilk;
+  }
+  img {
+    border: black 5px solid;
+  }
+  .fullWidth {
+    width: 100%;
+  }
+  p{
+    font-size: 2.9rem;
+    color: cornsilk;
+  }
+  .left {
+    text-align: left;
+  }
+  button{
+    font-size: 5rem;
+    padding: 2rem;
+    width: 100%;
+    margin: 2rem auto;
+    background: lightcyan;
+  }
+  span {
+    font-weight: bold;
+    font-style: oblique;
+  }
+</style>
+</head>
+<!--
+First Screen:
+
+<h1>Will It Kill Me?</h1>
+<img src="spider_photo_by_me.jpg" class="fullWidth">
+<p>What would you like to identify?</p>
+<button>Plant</button>
+<button>Animal</button>
+
+-->
+
+<!--
+Second Screen:
+
+<p>Tap the screen to take a photo.</p>
+<img src="24AABA3600000578-0-image-a-2_1421161292087.jpg" class="fullWidth">
+
+-->
+
+<!--
+Third Screen:
+
+<img src="24AABA3600000578-0-image-a-2_1421161292087.jpg">
+<p>This spider is most likely one of these types:</p>
+<button>Brown Huntsman (82%)</button>
+<button>Badge Huntsman (18%)</button>
+
+-->
+
+<!--
+Fourth Screen
+<h1>Brown Huntsman</h1>
+<img src="brown huntsman isopeda vill.jpg">
+<p class="left"><span>Will it bite you? </span>Yes</p>
+<p class="left"><span>Is it venomous? </span>Yes</p>
+<p class="left"><span>Will it kill you? </span>No. The venom usually produces only minor local pain and redness for about 30-40 minutes. Asthmatics and allergy sufferers may experience problems for longer.<p>
+-->
+<body id="screen">
+<h1>Will It Kill Me?</h1>
+<img src="spider_photo_by_me.jpg" class="fullWidth">
+<p>What would you like to identify?</p>
+<button onclick="loadScreen2()">Plant</button>
+<button onclick="loadScreen2()">Animal</button>
+<script>
+  function loadScreen2(){
+    document.getElementById("screen").innerHTML = '<p>Tap the screen to take a photo.</p><img src="drop_bear.jpg" class="fullWidth" onclick="loadScreen3()">';
+  }
+  function loadScreen3(){
+    document.getElementById("screen").innerHTML = '<img src="drop_bear.jpg" style="width: 60%;"><p>This animal is most likely one of these types:</p><button onclick="loadScreen4()">Drop Bear (79%)</button><button>Koala (21%)</button>';
+  }
+  function loadScreen4(){
+    document.getElementById("screen").innerHTML = '<h1>Drop Bear</h1><img src="drop_bear_profile.jpg" style="width: 80%;"><p class="left"><span>Will it bite you? </span>Yes</p><p class="left"><span>Is it venomous? </span>No</p><p class="left"><span>Will it kill you? </span>Yes. The drop bear falls on the unsuspecting and eats their face. This carnivore is viscious and shows no mercy. RUN.<p>';
+    document.body.style.backgroundColor = "red";
+  }
+</script>
+</body>
+</html>
