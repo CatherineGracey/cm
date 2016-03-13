@@ -1,9 +1,12 @@
 doctype html
 html
 	head
-		title= title
-		link(rel='stylesheet', href='/stylesheets/style.css')
+		block head
+			title= title
+			link(rel='stylesheet', href='/stylesheets/style.css')
 	body
 		h1= title
 		section
 			block content
+		footer
+			p To follow our progress, please visit us at #[a(href='http://www.facebook.com/CentaurMagic/') Facebook].

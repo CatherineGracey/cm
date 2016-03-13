@@ -1,5 +1,5 @@
 body {
-  padding: 5%;
+  padding: 1% 5%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: antiquewhite;
 }
@@ -18,11 +18,30 @@ h1 {
   text-align: center;
 }
 
-section {
+h2 {
+  text-align: center;
+}
+
+section, footer {
   padding: 30px;
   border-bottom: solid brown 5px;
   background: white;
   margin: 0 auto;
   max-width: 800px;
   text-align: justify;
+}
+
+.gallery img {
+  max-width: 45%;
+  padding: 2.5%;
+}
+
+.project {
+  border-top: dotted brown 5px;
+  border-bottom: dotted brown 5px;
+
+}
+
+.project h3 {
+  text-align: center;
 }
