@@ -11,10 +11,16 @@ block content
 				a(href="http://www.languagelearning.ninja")
 					img(src="/images/lln-index.png")
 					img(src="/images/lln-hangman.png")
-				p Language Learning Ninja is a website that teaches foreign languages, and currently includes Danish, English, French, German, Italian and Spanish. Languages are taught with a variety of methods, and we are frequently adding new modules to the range.
+				h4 What?
+				p Language Learning Ninja is a website that teaches foreign languages, and currently includes Danish, English, French, German, Italian and Spanish. There are three main approaches to instruction. The first is traditional vocabulary training using flash cards with additional lessons that are currently under development. The second is through games that require the user to either translate from their native language into the target language or to operate directly in the target language. These games include hangman, crosswords, word searches, and memory pairs. The third approach is with a library of texts that are natively created in the target language and then translated into the user's native language. All three approaches use spaced repetition and are integrated with each module. As users encounter new words they are added to the user's personal dictionary. Words are then shown to the user with a greater or shorter time delay based on how well the user performs. By combining these approaches, users are able to get greater breadth of practice, because they are not confined to a predictable context for each word.
+				h4 How?
+				p This website relies heavily on client and server side JavaScript. Hosted on Heroku, the server code has been written in node.js and uses several popular libraries such as express.js and passport.js. The user database relies on MongoDB, and pages have been templated using Jade. User emails are sent via MailGun.
 		div.project
 			h3 Maths Makes My Day
 			a(href="http://www.mathsmakesmyday.com")
 				img(src="/images/mmmd-index.png")
 				img(src="/images/mmmd-practice.png")
+			h4 What?
 			p Maths Makes My Day is a tutoring business based in Victoria, Australia. For this project we compiled a range resources. There are links to relevant state term calendars and curricula information for a range of subjects throughout the country. We also wrote a program for students to practice their skills in basic mathematics, as this fundamental area is lacking for many of the students that use the service.
+			h4 How?
+			p This website is primarily static, and has been coded with HTML and CSS. The page where students can test their maths skills has been written with client side JavaScript. The site is hosted on Heroku and the server code has been written in node.js.

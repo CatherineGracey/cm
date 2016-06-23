@@ -38,8 +38,10 @@ section, footer {
 
 .project {
   border-top: dotted brown 5px;
-  border-bottom: dotted brown 5px;
+}
 
+.project:nth-last-of-type(1) {
+  border-bottom: dotted brown 5px;
 }
 
 .project h3 {
