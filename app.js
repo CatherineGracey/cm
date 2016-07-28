@@ -20,7 +20,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public'), {maxAge: 1200000}));
+//Cache is set to one week.
+app.use(express.static(path.join(__dirname, 'public'), {maxAge: 604800000}));
 
 app.use('/', routes);
 app.use('/dev', devRoute);
